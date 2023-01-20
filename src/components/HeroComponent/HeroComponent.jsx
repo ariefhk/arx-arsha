@@ -6,11 +6,14 @@ import { Hero } from "../../assets/index";
 function HeroComponent() {
   return (
     <section>
-      <Container className="hero">
+      <Container id="hero">
         <Row>
-          <Col lg="6">
-            <h1>Better Solutions For Your Business</h1>
-            <h2>
+          <Col
+            lg="6"
+            className="d-flex flex-column justify-content-center pt-2"
+          >
+            <h1 className="hero-title">Better Solutions For Your Business</h1>
+            <h2 className="hero-desc">
               We are team of talented designers making websites with Bootstrap
             </h2>
             <div className="d-flex gap-4">
@@ -18,8 +21,8 @@ function HeroComponent() {
               <Button className="hero-btn-watch-video">Watch Video</Button>
             </div>
           </Col>
-          <Col lg="6">
-            <Image src={Hero} className="img-fluid" />
+          <Col lg="6" className="hero-img">
+            <Image src={Hero} className="img-fluid animated" />
           </Col>
         </Row>
       </Container>
