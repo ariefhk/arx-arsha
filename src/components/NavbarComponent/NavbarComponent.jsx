@@ -35,34 +35,45 @@ function NavbarComponent() {
   ];
 
   return (
-    <Container id="navbar">
-      <Navbar expand="lg">
-        <Navbar.Brand className="navbar-logo" href="#home">
-          ARSHA
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="navbar-nav ms-auto">
-            {navLink.map((link) => {
-              if (link.name === "Drop Down") {
+    <header>
+      <Container id="navbar">
+        <Navbar expand="lg">
+          <Navbar.Brand className="navbar-logo" href="#home">
+            ARSHA
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="navbar-nav ms-auto">
+              {navLink.map((link) => {
+                if (link.name === "Drop Down") {
+                  return (
+                    <NavDropdown
+                      title={
+                        <span className="navbar-nav-link">{link.name}</span>
+                      }
+                      id="basic-nav-dropdown"
+                    >
+                      <NavDropdown.Item href="#action/3.1">
+                        Action
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        Another action
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  );
+                }
                 return (
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      Action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                      Another action
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <Nav.Link className="navbar-nav-link" href={link.url}>
+                    {link.name}
+                  </Nav.Link>
                 );
-              }
-              return <Nav.Link href={link.url}>{link.name}</Nav.Link>;
-            })}
-          </Nav>
-        </Navbar.Collapse>
-        <Button className="navbar-getstarted">Get Started</Button>
-      </Navbar>
-    </Container>
+              })}
+            </Nav>
+            <Button className="navbar-getstarted">Get Started</Button>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </header>
   );
 }
 

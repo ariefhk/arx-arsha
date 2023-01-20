@@ -1,9 +1,14 @@
+header {
+  background: rgba(40, 58, 90, 0.9);
+}
+
 #navbar {
   padding: 10px;
 }
 
 #navbar .navbar-logo {
-  font-size: 30px;
+  color: #fff;
+  font-size: 34px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -14,7 +19,15 @@
 
 #navbar .navbar-nav {
   gap: 10px;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+#navbar .navbar-nav-link {
+  color: #fff;
+}
+
+#navbar .navbar-nav-link:hover {
+  color: #47b2e4;
 }
 
 #navbar .navbar-getstarted {
