@@ -5,17 +5,19 @@ section {
 }
 
 #hero .hero-title {
+  font-family: "Jost", sans-serif;
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
 }
 
 #hero .hero-desc {
+  font-family: "Jost", sans-serif;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 #hero .animated {
@@ -27,10 +29,10 @@ section {
 }
 
 #hero .hero-btn-get-started {
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  display: inline-block;
   padding: 10px 28px 11px 28px;
   border-radius: 50px;
   transition: 0.5s;
@@ -42,6 +44,30 @@ section {
 
 #hero .hero-btn-get-started:hover {
   background: #209dd8;
+}
+
+#hero .hero-btn-watch-video {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#hero .hero-btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+#hero .hero-btn-watch-video:hover i {
+  color: #47b2e4;
 }
 
 @-webkit-keyframes up-down {

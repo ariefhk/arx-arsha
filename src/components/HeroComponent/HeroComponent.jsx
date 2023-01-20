@@ -18,7 +18,12 @@ function HeroComponent() {
             </h2>
             <div className="d-flex gap-4">
               <Button className="hero-btn-get-started">Get Started</Button>
-              <Button className="hero-btn-watch-video">Watch Video</Button>
+              <a
+                href="https://www.youtube.com/channel/UCvslj42lCyg17lnFbEzwfSw"
+                className="hero-btn-watch-video"
+              >
+                <i class="bi bi-play-circle"></i> <span>Watch Video</span>
+              </a>
             </div>
           </Col>
           <Col lg="6" className="hero-img">
