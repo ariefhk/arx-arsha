@@ -1,0 +1,21 @@
+#partner-inti {
+  background-color: #f3f5fa;
+}
+
+#partner {
+  padding: 12px 0;
+  text-align: center;
+}
+
+#partner .partner-img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
+}
+
+#partner .partner-img:hover {
+  filter: none;
+  transform: scale(1.1);
+}

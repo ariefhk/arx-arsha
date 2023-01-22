@@ -1,10 +1,11 @@
-import { NavbarComponent, HeroComponent } from "./components";
+import { NavbarComponent, HeroComponent, PartnerComponent } from "./components";
 
 function App() {
   return (
     <>
       <NavbarComponent />
       <HeroComponent />
+      <PartnerComponent />
     </>
   );
 }
