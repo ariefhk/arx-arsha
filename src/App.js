@@ -1,4 +1,9 @@
-import { NavbarComponent, HeroComponent, PartnerComponent } from "./components";
+import {
+  NavbarComponent,
+  HeroComponent,
+  PartnerComponent,
+  AboutUsComponent,
+} from "./components";
 
 function App() {
   return (
@@ -6,6 +11,7 @@ function App() {
       <NavbarComponent />
       <HeroComponent />
       <PartnerComponent />
+      <AboutUsComponent />
     </>
   );
 }
